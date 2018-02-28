@@ -1,27 +1,12 @@
+
+/******* Body & Container Styling *******/
+
 img, embed, object, video {
   max-width: 100%;
 }
 
 * {
   box-sizing: border-box;
-}
-
-header {
-  width: 100%;
-  padding: 3px;
-  height: 30%;
-  color: #5093A5;
-  font-family: 'Philosopher', sans-serif;
-  text-align: right;
-}
-
-h1 {
-  color: #C0ECF8;
-  font-size: 100%;
-}
-
-.titles h3 {
-  font-size:90%;
 }
 
 body {
@@ -42,10 +27,30 @@ body {
   justify-content: space-between;
 }
 
-.logo {
-  height: 90px;
-  float: left;
-  padding: 8px 10px 8px 8px;
+.item {
+  background-color: #10262C;
+  padding: 3px;
+  margin: 2px;
+  border-radius: 3px;
+}
+
+/******* Header Styling *******/
+
+header {
+  width: 100%;
+  padding: 3px;
+  height: 30%;
+  color: #5093A5;
+  text-align: right;
+}
+
+h1 {
+  color: #C0ECF8;
+  font-size: 100%;
+}
+
+.titles h3 {
+  font-size:90%;
 }
 
 .titles {
@@ -57,16 +62,17 @@ body {
    align-self: flex-end;
 }
 
+.logo {
+  height: 90px;
+  float: left;
+  padding: 8px 10px 8px 8px;
+}
+
+/******* Main & Individual Items Styling *******/
+
 .main-img {
   width: 100%;
   height: 200px;
-}
-
-.item {
-  background-color: #10262C;
-  padding: 3px;
-  margin: 2px;
-  border-radius: 3px;
 }
 
 .article-img {
