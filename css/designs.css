@@ -34,6 +34,10 @@ body {
   border-radius: 3px;
 }
 
+.main-content {
+  width: 100%;
+}
+
 .container .articles{
   display: flex;
   flex-wrap: wrap;
@@ -46,6 +50,7 @@ body {
   justify-content: space-between;
   border-radius: 3px;
 }
+
 /******* Header Styling *******/
 
 header {
@@ -89,7 +94,7 @@ h1 {
   width: 100%;
 }
 
-.item1 {
+.header {
   order: -1;
 }
 
@@ -136,6 +141,10 @@ p {
 /******** Changes for tablet size device *********/
 
 @media screen and (min-width: 585px) {
+  .header {
+    order: -1;
+  }
+
   h1 {
     font-size: 100%;
   }
@@ -151,10 +160,15 @@ p {
 
   .projects-title {
     font-size: 130%;
+    order: -1;
   }
 
   .article {
     width: 32%;
+  }
+
+  .code-image {
+    order: -1;
   }
 
   .pixelart, .esther, .portfolio{
@@ -177,8 +191,8 @@ p {
     padding: 5px;
   }
 
-  header {
-    padding: 3px;
+  .header {
+    order: -1;
   }
 
   h1 {
@@ -197,6 +211,7 @@ p {
 
   .projects-title {
     font-size: 200%;
+    order: -1;
   }
 
   .article {
@@ -205,10 +220,12 @@ p {
 
   .code-image {
     padding: 5px;
+    order: -1;
   }
 
   .pixelart, .esther, .portfolio{
     padding: 5px;
+    order: -1;
   }
 
   h4 {
