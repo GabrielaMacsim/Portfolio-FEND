@@ -2,50 +2,46 @@
 <html>
 <head>
   <title>Front End Developer Scholar Portfolio: Gabriela Macsim</title>
-  <link href="design.css" rel="stylesheet">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Beginner Front End Developer Portfolio ">
+  <meta name="keywords" content="HTML,CSS,projects">
   <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
-  <!-- I used three stylesheets instead of using media queries -->
-  <link rel="stylesheet" href="css/design.css">
-  <link rel="stylesheet" media="screen and (max-width:965px)" href="css/under965.css">
-  <link rel="stylesheet" media="screen and (max-width:585px)" href="css/under585.css">
+  <link rel="stylesheet" href="css/designs.css">
+  <!-- <link rel="stylesheet" media="screen and (max-width:965px)" href="css/under965.css">
+  <link rel="stylesheet" media="screen and (min-width:585px)" href="css/under585.css"> -->
   <link rel="shortcut icon" href="images/icon.ico"/>
 </head>
 <body>
-  <!-- I made a container and used flexbox. I would have liked to use CSS Grids, because I find them very easy to use, but also wanted to work with this -->
   <div class="container">
-    <!-- Header -->
-    <header class="item item1">
+    <header class="container header item item1">
       <img class="logo" src="images/udacity.png" alt="logo">
       <div class="titles">
         <h1>GABRIELA MACSIM</h1>
         <h3>FRONT END DEVELOPMENT SCHOLAR</h3>
       </div>
     </header>
-    <!-- Main Image -->
-    <main class="item item2">
-      <img class="main-img" src="images/code.jpeg" alt="picture-of-code">
-    </main>
-    <!-- Articles with title -->
-    <h2 class="item item3">Featured Work</h2>
-    <section class="item item4 article">
+    <main>
+      <img class="item code-image" src="images/code.jpeg" alt="picture-of-code">
+    <section class="container articles">
+      <h2 class="item projects-title">Featured Work</h2>
+    <article class="item pixelart article">
       <img class="article-img" src="images/pixelart1.png" alt="pixel-drawing">
       <p>PIXEL ART MAKER</p>
-      <h4><a href="https://github.com/GabrielaMacsim/Pixel-Art-Maker-GDCS"> https://github.com/GabrielaMacsim/Pixel-Art-Maker-GDCS </a></h4>
-    </section>
-    <section class="item item5 article">
-      <img class="article-img" src="images/Esther.jpg" alt="picture-of-Esther-The-Wonder-Pig">
+      <h4><a href="https://github.com/GabrielaMacsim/Pixel-Art-Maker-GDCS" target="_blank"> https://github.com/GabrielaMacsim/Pixel-Art-Maker-GDCS </a></h4>
+    </article>
+    <article class="item esther article">
+      <img class="article-img" src="images/Esther1.jpg" alt="picture-of-Esther-The-Wonder-Pig">
       <p>ANIMAL CARD</p>
-      <h4><a href="https://github.com/GabrielaMacsim/AnimalTCard-FEND"> https://github.com/GabrielaMacsim/AnimalTCard-FEND </a></h4>
-    </section>
-    <section class="item item6 article">
+      <h4><a href="https://github.com/GabrielaMacsim/AnimalTCard-FEND" target="_blank"> https://github.com/GabrielaMacsim/AnimalTCard-FEND </a></h4>
+    </article>
+    <article class="item portfolio article">
       <img class="article-img" src="images/code-port1.png" alt="html-code">
       <p>DEVELOPER PORTFOLIO</p>
-      <h4><a href="https://github.com/GabrielaMacsim/Portfolio-FEND"> https://github.com/GabrielaMacsim/Portfolio-FEND </a></h4>
+      <h4><a href="https://github.com/GabrielaMacsim/Portfolio-FEND" target="_blank"> https://github.com/GabrielaMacsim/Portfolio-FEND </a></h4>
+    </article>
     </section>
-<div>
+    </main>
+</div>
 </body>
 </html>
-
-<!-- Thank you for taking the time to review my project! -->
