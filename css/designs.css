@@ -1,0 +1,223 @@
+
+/******* Body & Container Styling *******/
+
+img, embed, object, video {
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #edf0f1;
+  font-family: 'Philosopher', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 100%;
+  background-color: white;
+  padding: 5px;
+  align-self: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.item {
+  background-color: #10262c;
+  padding: 3px;
+  margin: 2px;
+  border-radius: 3px;
+}
+
+.container .articles{
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 100%;
+  background-color: #00161c;
+  padding: 1px 2px 1px 2px;
+  align-self: center;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 3px;
+}
+/******* Header Styling *******/
+
+header {
+  width: 100%;
+  padding: 3px;
+  color: #5093a5;
+  text-align: right;
+}
+
+h1 {
+  color: #c0ecf8;
+  font-size: 70%;
+}
+
+.titles h3 {
+  font-size: 50%;
+}
+
+.titles {
+   padding-right: 10px;
+   font-size: 100%;
+   letter-spacing: 0.2rem;
+   align-self: flex-end;
+}
+
+.logo {
+  height: 60px;
+  padding: 4px 5px 4px 5px;
+}
+
+/******* Main & Individual Items Styling *******/
+
+.article-img {
+  width: 100%;
+  height: 65%;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+.article {
+  width: 100%;
+}
+
+.item1 {
+  order: -1;
+}
+
+.code-image {
+  order: -1;
+  width: 100%;
+  padding: 5px;
+}
+
+.projects-title {
+   order: -1;
+   width: 100%;
+   color: #5093a5;
+   font-family: 'Philosopher', sans-serif;
+   font-size: 100%;
+   padding-left: 5px;
+}
+
+.pixelart, .esther, .portfolio{
+  text-align: center;
+  padding: 2px;
+  order: -1;
+}
+
+h4 {
+  white-space: nowrap;
+  text-overflow: clip;
+  overflow: hidden;
+  font-weight: 200;
+  font-size: 70%;
+  padding: 0 3px 10px 3px;
+}
+
+a {
+  color: #5093a5;
+}
+
+p {
+  font-weight: 400;
+  font-size: 95%;
+  color: #c0ecf8;
+}
+
+/******** Changes for tablet size device *********/
+
+@media screen and (min-width: 585px) {
+  h1 {
+    font-size: 100%;
+  }
+
+  .titles h3 {
+    font-size: 80%;
+  }
+
+  .logo {
+    height: 90px;
+    padding: 8px 10px 8px 8px;
+  }
+
+  .projects-title {
+    font-size: 130%;
+  }
+
+  .article {
+    width: 32%;
+  }
+
+  .pixelart, .esther, .portfolio{
+    order: -1;
+    flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 965px) {
+  .container {
+    width: 81%;
+    padding: 10px;
+  }
+
+  .container header {
+    width: 100%;
+  }
+
+  .item {
+    padding: 5px;
+  }
+
+  header {
+    padding: 3px;
+  }
+
+  h1 {
+    font-weight: 800;
+    font-size: 200%;
+  }
+
+  .titles {
+    padding-right: 40px;
+  }
+
+  .logo {
+    height: 150px;
+    padding: 15px;
+  }
+
+  .projects-title {
+    font-size: 200%;
+  }
+
+  .article {
+    width: 27%;
+  }
+
+  .code-image {
+    padding: 5px;
+  }
+
+  .pixelart, .esther, .portfolio{
+    padding: 5px;
+  }
+
+  h4 {
+    font-size: 100%;
+    padding-bottom: 3px;
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 150%;
+  }
+}
