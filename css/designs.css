@@ -53,7 +53,8 @@ body {
 
 /******* Header Styling *******/
 
-header {
+.header {
+  order: -1;
   width: 100%;
   padding: 3px;
   color: #5093a5;
@@ -81,7 +82,7 @@ h1 {
   padding: 4px 5px 4px 5px;
 }
 
-/******* Main & Individual Items Styling *******/
+/******* Main Styling *******/
 
 .article-img {
   width: 100%;
@@ -92,10 +93,6 @@ h1 {
 
 .article {
   width: 100%;
-}
-
-.header {
-  order: -1;
 }
 
 .code-image {
@@ -176,6 +173,8 @@ p {
     flex-grow: 1;
   }
 }
+
+/******** Changes for desktop size device *********/
 
 @media screen and (min-width: 965px) {
   .container {
